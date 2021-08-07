@@ -36,9 +36,9 @@ void bill:: WelcomeScreen(void)//function for welcome screen
     cout<<"\n\t\t\t\t\t\t\t\t............................................................................";
     cout<<"\n\t\t\t\t\t\t\t\t|                                                                          |";
     cout<<"\n\t\t\t\t\t\t\t\t|                                                                          |";
-    cout<<"\n\t\t\t\t\t\t\t\t|                               WELCOME TO                                 |";
+    cout<<"\n\t\t\t\t\t\t\t\t|                                   WELCOME TO                             |";
     cout<<"\n\t\t\t\t\t\t\t\t|                                                                          |";
-    cout<<"\n\t\t\t\t\t\t\t\t|                      SUPERMARKET BILLING SYSTEM                          |";
+    cout<<"\n\t\t\t\t\t\t\t\t|                 ->>>>     SUPERMARKET BILLING SYSTEM    <<<<-            |";
     cout<<"\n\t\t\t\t\t\t\t\t|                                                                          |";
     cout<<"\n\t\t\t\t\t\t\t\t|..........................................................................|";
     cout<<"\n\t\t\t\t\t\t\t\t****************************************************************************";
@@ -53,18 +53,23 @@ void bill::menu()
     p:
     system("cls");
     int choice;
-    cout<<"\n**---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------**";
-    cout<<"\n\t\t\t\t\t                                                    SUPERMARKET BILLING SYSTEM                                                                                               ";
-    cout<<"\n**---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------**";
-    cout<<"\n\t\t\t\t\t\t\t\t==================================================================================";
-    cout<<"\n\t\t\t\t\t\t\t\t..................................................................................";
-    cout<<"\n\t\t\t\t\t\t\t\t\t\t\t\t CONTROL PANEL ";
-    cout<<"\n\t\t\t\t\t\t\t\t..................................................................................";
-     cout<<"\n\t\t\t\t\t\t\t\t==================================================================================";
-	cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t 1.ADMIN";
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t 2.CUSTOMER";
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t 3.EXIT";
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t Enter your choice :";
+    
+    cout<<"\n__________________________________________________________________________________________________________________________________________________________________________________________________________________";
+    cout<<"\n\n\t\t\t\t\t                                                   SUPERMARKET BILLING SYSTEM                                                                                               ";
+    cout<<"\n__________________________________________________________________________________________________________________________________________________________________________________________________________________";
+    cout<<"\n\n";
+    
+    cout<<"\n\t\t\t\t\t\t\t\t............................................................................";
+    cout<<"\n\t\t\t\t\t\t\t\t|                                                                          |";
+    cout<<"\n\t\t\t\t\t\t\t\t|                          ->> CONTROL PANNEL <<-                          |";
+    cout<<"\n\t\t\t\t\t\t\t\t|..........................................................................|";
+    cout<<"\n\t\t\t\t\t\t\t\t|__________________________________________________________________________|";
+    cout<<"\n\t\t\t\t\t\t\t\t|                                                                          |";
+	cout<<"\n\t\t\t\t\t\t\t\t|                                1.ADMIN                                   |";
+    cout<<"\n\t\t\t\t\t\t\t\t|                                2.CUSTOMER                                |";
+    cout<<"\n\t\t\t\t\t\t\t\t|                                3.EXIT                                    |";
+    cout<<"\n\t\t\t\t\t\t\t\t|..........................................................................|";
+    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t   Enter your choice :";
     cin>>choice;
     switch(choice)
     {
@@ -77,7 +82,7 @@ void bill::menu()
         
 
 
-        default:cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t Invalid Value";
+        default:cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t   **** Invalid Value ****";
     }
     getch();
     goto p;
@@ -86,11 +91,11 @@ void bill::menu()
 void bill::ex_it()//function to exit
 {
     system("cls");
-     cout<<"\n\t\t\t\t\t\t\t\t==================================================================================";
-    cout<<"\n\t\t\t\t\t\t\t\t..................................................................................";
-    cout<<"\n\t\t\t\t\t\t\t\t\t\t\t   SUPERMARKET BILLING SYSTEM ";
-    cout<<"\n\t\t\t\t\t\t\t\t..................................................................................";
-     cout<<"\n\t\t\t\t\t\t\t\t==================================================================================";
+     cout<<"\n\t\t\t\t\t\t\t\t===================================================================================";
+    cout<<"\n\t\t\t\t\t\t\t\t|.................................................................................|";
+    cout<<"\n\t\t\t\t\t\t\t\t|                             SUPERMARKET BILLING SYSTEM                          |";
+    cout<<"\n\t\t\t\t\t\t\t\t|.................................................................................|";
+     cout<<"\n\t\t\t\t\t\t\t\t===================================================================================";
     cout<<"\n\n\n\n\n\n\t\t\t\t\t\t\t\t\t\t\t\t *** THANK YOU *** ";
     cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t        FOR";
     cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t      VISITING :)";
@@ -101,18 +106,20 @@ void bill::admin()
     p:
     system("cls");
     int choice;
-    cout<<"\n\t\t\t\t\t\t\t\t==================================================================================";
-    cout<<"\n\t\t\t\t\t\t\t\t..................................................................................";
-    cout<<"\n\t\t\t\t\t\t\t\t\t\t\t\t   ADMIN PANEL ";
-    cout<<"\n\t\t\t\t\t\t\t\t..................................................................................";
-     cout<<"\n\t\t\t\t\t\t\t\t==================================================================================";
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t 1.Add product";
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t 2.Search Product";
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t 3.Edit Product";
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t 4.Delete Product";
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t 5.Show Products";
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t 6.Go Back";
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t Enter your choice :";
+     cout<<"\n\t\t\t\t\t\t\t\t\t............................................................................";
+    cout<<"\n\t\t\t\t\t\t\t\t\t|                                                                          |";
+    cout<<"\n\t\t\t\t\t\t\t\t\t|                             ->> ADMIN PANEL <<-                          |";
+    cout<<"\n\t\t\t\t\t\t\t\t\t|..........................................................................|";
+    cout<<"\n\t\t\t\t\t\t\t\t\t|__________________________________________________________________________|";
+    cout<<"\n\t\t\t\t\t\t\t\t\t|                                                                          |";
+	cout<<"\n\t\t\t\t\t\t\t\t\t|                                1.ADD PRODUCT                             |";
+    cout<<"\n\t\t\t\t\t\t\t\t\t|                                2.SEARCH PRODUCT                          |";
+    cout<<"\n\t\t\t\t\t\t\t\t\t|                                3.EDIT PRODUCT                            |";
+    cout<<"\n\t\t\t\t\t\t\t\t\t|                                4.DELETE PRODUCT                          |";
+    cout<<"\n\t\t\t\t\t\t\t\t\t|                                5.SHOW PRODUCT                            |";
+    cout<<"\n\t\t\t\t\t\t\t\t\t|                                6.GO BACK                                 |";
+    cout<<"\n\t\t\t\t\t\t\t\t\t|..........................................................................|";
+    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t Enter your choice :";
     cin>>choice;
     switch(choice)
     {
@@ -143,12 +150,16 @@ void bill::LoginScreen(void)//function for Login screen
     char original_Username[15]="Admin";
     char original_Password[15]="2000";
     do
-	{   cout<<"\n\t\t\t\t\t\t\t\t==================================================================================";
-    cout<<"\n\t\t\t\t\t\t\t\t..................................................................................";
-    cout<<"\n\t\t\t\t\t\t\t\t\t\t\t\t\tLOGIN ";
-    cout<<"\n\t\t\t\t\t\t\t\t..................................................................................";
-     cout<<"\n\t\t\t\t\t\t\t\t==================================================================================";
-	    cout<<"\n\n\n\n\n\n\t\t\t\t\t\t\t\t\t\t\t    ENTER YOUR USERNAME AND PASSWORD:  ";
+	{ 
+	cout<<"\n\t\t\t\t\t\t\t\t...................................................................................";  
+    cout<<"\n\t\t\t\t\t\t\t\t|                                                                                 |";
+    cout<<"\n\t\t\t\t\t\t\t\t|                                     LOGIN                                       |";
+    cout<<"\n\t\t\t\t\t\t\t\t|.................................................................................|";
+    cout<<"\n\t\t\t\t\t\t\t\t|_________________________________________________________________________________|";
+    cout<<"\n\t\t\t\t\t\t\t\t|                                                                                 |";
+    cout<<"\n\t\t\t\t\t\t\t\t|                         ENTER YOUR USERNAME AND PASSWORD                        |";
+    cout<<"\n\t\t\t\t\t\t\t\t|.................................................................................|";
+	    
         cout<<"\n\n\n\n\t\t\t\t\t\t\t\t\t\t\t\t   USERNAME:  ";
         cin>>Username;
         cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t   PASSWORD:  ";
@@ -182,21 +193,23 @@ void bill::customer()
     p:
     system("cls");
     int choice;
-    cout<<"\n\t\t\t\t\t\t\t\t==================================================================================";
-    cout<<"\n\t\t\t\t\t\t\t\t..................................................................................";
-    cout<<"\n\t\t\t\t\t\t\t\t\t\t\t\tCUSTOMER PANEL ";
-    cout<<"\n\t\t\t\t\t\t\t\t..................................................................................";
-     cout<<"\n\t\t\t\t\t\t\t\t==================================================================================";
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t 1.Sale Product";
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t 2.GO back";
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t Enter your choice :";
+    cout<<"\n\n\n\n\n\n\n\t\t\t\t\t\t\t\t\t............................................................................";
+    cout<<"\n\t\t\t\t\t\t\t\t\t|                                                                          |";
+    cout<<"\n\t\t\t\t\t\t\t\t\t|                             ->>  CUSTOMER  <<-                           |";
+    cout<<"\n\t\t\t\t\t\t\t\t\t|..........................................................................|";
+    cout<<"\n\t\t\t\t\t\t\t\t\t|__________________________________________________________________________|";
+    cout<<"\n\t\t\t\t\t\t\t\t\t|                                                                          |";
+	cout<<"\n\t\t\t\t\t\t\t\t\t|                                1.SALE PRODUCT                            |";
+    cout<<"\n\t\t\t\t\t\t\t\t\t|                                2.GO BACK                                 |";
+    cout<<"\n\t\t\t\t\t\t\t\t\t|..........................................................................|";
+    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t      Enter your choice :";
     cin>>choice;
     switch(choice)
     {
         case 1:invoice();
                 break;
         case 2:menu();
-        case 3:cout<<"\\n\n\t\t\t\t\t\t\t\t\t\t\t\t Invalid value";
+        default:cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t     **** Invalid value ****";
     }
     getch();
     goto p;
@@ -210,16 +223,17 @@ void bill::add()
     string n;
     float p,d;
     cout<<"\n\n\t\t\t\t\t\t\t\t\t\t.......................................................";
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t                   ADD NEW PRODUCT";
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t.......................................................";
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t Pr No\t\tName\t\tPrice\t\tDiscount\n";
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t Product Code:";
+    cout<<"\n\t\t\t\t\t\t\t\t\t\t|                   ADD NEW PRODUCT                   |";
+    cout<<"\n\t\t\t\t\t\t\t\t\t\t|.....................................................|";
+    cout<<"\n\t\t\t\t\t\t\t\t\t\t|      PR NO.   |  NAME  |   PRICE  |  DISCOUNT       |";
+    cout<<"\n\t\t\t\t\t\t\t\t\t\t|.....................................................|";
+    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t      Product Code:";
     cin>>code;
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t Name:";
+    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t         Name:";
     cin>>name;
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t Price:";
+    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t         Price:";
     cin>>price;
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t Discount in %:";
+    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t         Discount in %:";
     cin>>discount;
     file.open("product.txt",ios::in);
     if(!file)
@@ -251,7 +265,7 @@ void bill::add()
         }
 
     }
-    cout<<"\\n\n\t\t\t\t\t\t\t\t\t\t\t   Record Inserted Successfully....";
+    cout<<"\n\n\n\t\t\t\t\t\t\t\t\t\t\t\t   Record Inserted Successfully....";
 }
 
 void bill::search()
@@ -260,14 +274,14 @@ void bill::search()
     fstream file;
     int p_c,found=0;
     cout<<"\n\n\t\t\t\t\t\t\t\t\t\t.......................................................";
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t SEARCH RECORD";
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t.......................................................";
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t Product Code:";
+    cout<<"\n\t\t\t\t\t\t\t\t\t\t|                   SEARCH PRODUCT                    |";
+    cout<<"\n\t\t\t\t\t\t\t\t\t\t|.....................................................|";
+    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t    Product Code:";
     cin>>p_c;
     file.open("product.txt",ios::in);
     if(!file)
     {
-        cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t File Opening Error....";
+        cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t File Opening Error....";
 
     }
     else
@@ -278,13 +292,13 @@ void bill::search()
             if(p_c==code)
             {
                 system("cls");
-                cout<<"\n\n\t\t\t\t\t\t\t\t\t\t.....................................................";
-                cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t SEARCHED RECORD ";
-                cout<<"\n\n\t\t\t\t\t\t\t\t\t\t.....................................................";
-                cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t Product code :"<<code;
-                cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t Product name :"<<name;
-                cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t Product Price :"<<price;
-                cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t Discount :"<<discount<<"%";
+                cout<<"\n\n\t\t\t\t\t\t\t\t\t\t.......................................................";
+                cout<<"\n\t\t\t\t\t\t\t\t\t\t|                   SEARCHED PRODUCT                  |";
+                cout<<"\n\t\t\t\t\t\t\t\t\t\t|.....................................................|";
+                cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t    Product code :"<<code;
+                cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t    Product name :"<<name;
+                cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t    Product Price :"<<price;
+                cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t    Discount :"<<discount<<"%";
                 found++;
 
             }
@@ -292,7 +306,7 @@ void bill::search()
         }
         file.close();
         if(found==0)
-        cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t Record cant found......";
+        cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t  Record not found......";
 
     }
 }
@@ -304,10 +318,10 @@ void bill::Edit()
     string n;
     int p_c,c,found=0;;
     fstream file,file1;
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t...............................................";
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t EDIT RECORD";
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t...............................................";
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t Product Code:";
+    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t.......................................................";
+    cout<<"\n\t\t\t\t\t\t\t\t\t\t|                     EDIT PRODUCT                    |";
+    cout<<"\n\t\t\t\t\t\t\t\t\t\t|.....................................................|";
+    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t     Product Code:";
     cin>>p_c;
     file.open("product.txt",ios::in);
     if(!file)
@@ -324,16 +338,16 @@ void bill::Edit()
             if(p_c==code)
             {
                
-                cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t Product New code :";
+                cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t     Product New code :";
                 cin>>c;
-                cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t Product name :";
+                cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t     Product name :";
                 cin>>n;
-                cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t Product Price :";
+                cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t     Product Price :";
                 cin>>p;
-                cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t Discount in % :";
+                cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t     Discount in % :";
                 cin>>d;
                 file1<<" "<<c<<" "<<n<<" "<<p<<" "<<d<<"\n";
-                cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t   Record Edit Sucessfully...";
+                cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t       Record Edit Sucessfully.....";
                 found++;
 
 
@@ -349,7 +363,7 @@ void bill::Edit()
         remove("product.txt");
         rename("product1.txt","product.txt");
         if(found==0)
-        cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t Record cant found......";
+        cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t  Record not found ......";
 
     }
 }
@@ -359,14 +373,14 @@ void bill::del()
     int p_c,found=0;
     fstream file,file1;
     cout<<"\n\n\t\t\t\t\t\t\t\t\t\t.......................................................";
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t DELETE PRODUCT";
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t.......................................................";
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t Product code:";
+    cout<<"\n\t\t\t\t\t\t\t\t\t\t|                    DELETE PRODUCT                   |";
+    cout<<"\n\t\t\t\t\t\t\t\t\t\t|.....................................................|";
+    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t     Product Code:";
     cin>>p_c;
     file.open("product.txt",ios::in);
     if(!file)
     {
-        cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t file opening error.........";
+        cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t    file opening error.........";
 
     }
     else{
@@ -376,7 +390,7 @@ void bill::del()
         {
             if(code==p_c)
             {
-                cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t Product Deleted Successfully....";
+                cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t   Product Deleted Successfully....";
                 found++;
             }
             else{
@@ -390,7 +404,7 @@ void bill::del()
         rename("product1.txt","product.txt");
         if(found==0)
         {
-            cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t Record not found.......";
+            cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t    Record not found.....";
         }
     }
 }
@@ -398,17 +412,19 @@ void bill::display()
 {
     system("cls");
     fstream file;
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t.........................................................";
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t  SHOW PRODUCT";
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t.........................................................";
+    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t............................................................";
+    cout<<"\n\t\t\t\t\t\t\t\t\t\t|                     SHOW PRODUCT                         |";
+    cout<<"\n\t\t\t\t\t\t\t\t\t\t|..........................................................|";
+  
     file.open("product.txt",ios::in);
 
     if(!file)
     {
-        cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t File opening error...........";
+        cout<<"\n\n\t\t\t\t\t\t\t\t\t\t\t\t    File opening error...........";
     }
     else{
-        cout<<"\n\n\t\t\t\t\t\t\t\t\t\t Code\t\tName\t\tPrice\t\tDiscount %";
+        cout<<"\n\t\t\t\t\t\t\t\t\t\t Code\t\tName\t\tPrice\t\tDiscount %";
+        cout<<"\n\t\t\t\t\t\t\t\t\t\t____________________________________________________________";
         file>>code>>name>>price>>discount;
         while(!file.eof())
         {
@@ -425,13 +441,13 @@ void bill::list()
 {
 fstream file;
 file.open("product.txt",ios::in);
-cout<<"\n\n\t\t\t\t\t\t\t\t\t===========================================================\n";
-cout<<"\n\n\t\t\t\t\t\t\t\t\t\t P.NO\t\t NAME \t\tPRICE\n";
-cout<<"\n\n\t\t\t\t\t\t\t\t\t===========================================================\n";
+cout<<"\n\t\t\t\t\t\t\t\t\t___________________________________________________________\n";
+cout<<"\n\t\t\t\t\t\t\t\t\t\t P.NO\t\t NAME \t\tPRICE\n";
+cout<<"\n\t\t\t\t\t\t\t\t\t___________________________________________________________\n";
 file>>code>>name>>price>>discount;
 while (!file.eof())
 {
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t\t"<<code<<"\t\t"<<name<<"\t\t"<<price<<"\n";
+    cout<<"\n\t\t\t\t\t\t\t\t\t\t"<<code<<"\t\t"<<name<<"\t\t"<<price<<"\n";
      file>>code>>name>>price>>discount;
 }
 file.close();
@@ -480,6 +496,7 @@ else{
     system("cls");
     cout<<"\n\n\t\t\t\t\t\t\t\t\t***************************************INVOICE************************************\n";
     cout<<"\n\n\t\t\t\t\t\t\t\t\tPR.NO\t\tPR NAME\t\tQUANTITY \tPRICE\tAMOUNT\t AMOUNT(+DISCOUNT)\n";
+    cout<<"\n\n\t\t\t\t\t\t\t\t\t__________________________________________________________________________________";
     for(int i=0;i<c;i++)
     {
         file.open("product.txt",ios::in);
@@ -497,9 +514,9 @@ else{
         }
         file.close();
     }
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t=================================================================================";
+    cout<<"\n\n\t\t\t\t\t\t\t\t\t==================================================================================";
     cout<<"\n\t\t\t\t\t\t\t\t\tTOTAL AMOUNT:"<<total;
-    cout<<"\n\n\t\t\t\t\t\t\t\t\t=================================================================================";
+    cout<<"\n\n\t\t\t\t\t\t\t\t\t==================================================================================";
 }
 }
 
